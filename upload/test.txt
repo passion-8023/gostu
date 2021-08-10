@@ -1,0 +1,30 @@
+go语言基本类型：
+
+数值类型：
+	整型
+		有符号：int int8 int16 int32 int64 rune
+		无符号：uint uint8 uint16 uint32 uint64 uintptr
+	浮点型：
+		单精度：float3
+		双精度：float64
+
+字符类型：byte
+布尔类型：bool
+字符串类型：string
+
+
+go语言派生类型：
+
+指针类型：pointer
+数组类型：array
+切片类型：slice
+map类型：
+结构体类型：struct
+管道类型：channel
+函数类型：
+接口类型：interface
+
+
+
+
+
