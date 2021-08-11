@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0962e2ba-991b-4480-99af-70926ebb0cb0" name="myServer">
+        <fileTransfer rootFolder="/www/wangxin/wx-go/gostu" accessType="SFTP" host="81.70.159.227" port="22" sshConfigId="7c59b549-7695-402d-b2a6-14d812c5635c" sshConfig="root@81.70.159.227:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

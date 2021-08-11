@@ -5,6 +5,7 @@ import (
 	"gostu/app/controllers"
 	"gostu/app/controllers/database"
 	"gostu/app/controllers/gorm"
+	"gostu/app/controllers/web"
 )
 
 func Routers(app *gin.Engine) {
@@ -12,6 +13,7 @@ func Routers(app *gin.Engine) {
 	AuthRouter(group)
 	DataBaseRouter(group)
 	GormRouter(group)
+	WebRouter(group)
 }
 
 func AuthRouter(group *gin.RouterGroup) {
@@ -46,5 +48,13 @@ func GormRouter(group *gin.RouterGroup) {
 		gormRouter.GET("add/info", gorm.AddInfo)
 		gormRouter.GET("select/info", gorm.QueryInfo)
 		gormRouter.GET("get/user/info", gorm.GetUserInfo)
+	}
+}
+
+func WebRouter(group *gin.RouterGroup)  {
+	webRouter := group.Group("web")
+	{
+		webRouter.GET("get/list", web.GetWebList)
+		webRouter.GET("get/data", web.GetWebContent)
 	}
 }
