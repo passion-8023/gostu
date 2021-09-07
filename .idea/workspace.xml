@@ -19,8 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba75aaf6-f3d3-4cbe-84c6-c239170f041c" name="默认的" comment="">
+    <list default="true" id="ba75aaf6-f3d3-4cbe-84c6-c239170f041c" name="默认的" comment="默认的">
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="G:\Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,11 +54,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Letcode_GO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,26 +78,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="536" y="164" key="#SSH_配置" timestamp="1628663471571">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="536" y="164" key="#SSH_配置/0.0.1920.1040@0.0.1920.1040" timestamp="1628663471571" />
-    <state x="552" y="177" key="#部署" timestamp="1628663506450">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="177" key="#部署/0.0.1920.1040@0.0.1920.1040" timestamp="1628663506450" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1628671165574">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628671165574" />
-    <state x="859" y="249" width="270" height="541" key="ftp.server.browser" timestamp="1628663504083">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="859" y="249" width="270" height="541" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1628663504083" />
   </component>
 </project>
