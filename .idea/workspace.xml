@@ -23,11 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba75aaf6-f3d3-4cbe-84c6-c239170f041c" name="默认的" comment="es相关">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +80,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="es相关" />
+    <option name="LAST_COMMIT_MESSAGE" value="es相关" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

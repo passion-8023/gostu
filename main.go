@@ -30,7 +30,7 @@ func main() {
 	//if df := database.Init(); df != nil {
 	//	defer df()
 	//}
-	if df := gorm.Init();df != nil {
+	if df := gorm.Init(); df != nil {
 		defer df()
 	}
 
