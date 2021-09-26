@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"gostu/app/controllers"
 	"gostu/app/controllers/database"
+	"gostu/app/controllers/es"
 	"gostu/app/controllers/gorm"
 	"gostu/app/controllers/web"
 	"gostu/app/controllers/webcontent"
@@ -15,6 +16,7 @@ func Routers(app *gin.Engine) {
 	DataBaseRouter(group)
 	GormRouter(group)
 	WebRouter(group)
+	EsRouter(group)
 }
 
 func AuthRouter(group *gin.RouterGroup) {
@@ -52,11 +54,18 @@ func GormRouter(group *gin.RouterGroup) {
 	}
 }
 
-func WebRouter(group *gin.RouterGroup)  {
+func WebRouter(group *gin.RouterGroup) {
 	webRouter := group.Group("web")
 	{
 		webRouter.GET("get/list", web.GetWebList)
 		webRouter.GET("get/data", web.GetWebContent)
 		webRouter.GET("get/web/content", webcontent.GetWebContent)
+	}
+}
+
+func EsRouter(group *gin.RouterGroup) {
+	esRouter := group.Group("es")
+	{
+		esRouter.GET("create/index", es.CreateIndex)
 	}
 }

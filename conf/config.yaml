@@ -36,3 +36,9 @@ log:
 # chromedriver 配置
 chrome:
   port: 9090
+
+# elasticsearch 配置
+es:
+  host: 127.0.0.1
+  port: 8080
+  scheme: http
