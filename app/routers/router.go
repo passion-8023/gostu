@@ -67,5 +67,8 @@ func EsRouter(group *gin.RouterGroup) {
 	esRouter := group.Group("es")
 	{
 		esRouter.GET("create/index", es.CreateIndex)
+		esRouter.GET("check/index", es.CheckIndex)
+		esRouter.GET("delete/index", es.DeleteIndex)
+		esRouter.GET("bulk/data", es.BulkData)
 	}
 }

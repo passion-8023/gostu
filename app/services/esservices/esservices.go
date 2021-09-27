@@ -8,30 +8,44 @@ const Mapping = `
 		"max_result_window": 1000000
 	},
 	"mappings":{
-		"properties":{
-			"name":{
-				"type":"text"
-			},
-			"age":{
-				"type":"long"
-			},
-			"married":{
-				"type":"boolean"
-			},
-			"created":{
-				"type":"date"
-			},
-			"tags":{
-				"type":"keyword"
-			},
-			"location":{
-				"type":"geo_point"
-			},
-			"suggest_field":{
-				"type":"completion"
+		"wx_user":{
+			"properties":{
+				"name":{
+					"type":"text"
+				},
+				"age":{
+					"type":"long"
+				},
+				"married":{
+					"type":"boolean"
+				},
+				"created":{
+					"type":"date",
+					"format": "yyyy-MM-dd HH:mm:ss"
+				},
+				"tags":{
+					"type":"keyword"
+				}
 			}
 		}
 	}
 }`
+
+type Employee struct {
+	FirstName string   `json:"first_name"`
+	LastName  string   `json:"last_name"`
+	Age       int      `json:"age"`
+	About     string   `json:"about"`
+	Interests []string `json:"interests"`
+}
+
+type User struct {
+	Name string `json:"name"`
+	Age int `json:"age"`
+	Married bool `json:"married"`
+	Created string `json:"created"`
+	Tags string `json:"tags"`
+}
+
 
 

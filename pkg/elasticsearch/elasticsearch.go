@@ -3,7 +3,7 @@ package elasticsearch
 import (
 	"context"
 	"fmt"
-	"github.com/olivere/elastic/v7"
+	"github.com/olivere/elastic/v6"
 	"gostu/pkg/config"
 	"log"
 )

@@ -42,3 +42,6 @@ es:
   host: 127.0.0.1
   port: 8080
   scheme: http
+  test_index_one: wx_test_data
+  test_type_one: employee
+  test_index_two: wx_user
