@@ -3,6 +3,7 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 	"gostu/app/controllers"
+	"gostu/app/controllers/binarySearchTree"
 	"gostu/app/controllers/database"
 	"gostu/app/controllers/es"
 	"gostu/app/controllers/gorm"
@@ -17,6 +18,7 @@ func Routers(app *gin.Engine) {
 	GormRouter(group)
 	WebRouter(group)
 	EsRouter(group)
+	TreeRouter(group)
 }
 
 func AuthRouter(group *gin.RouterGroup) {
@@ -70,5 +72,12 @@ func EsRouter(group *gin.RouterGroup) {
 		esRouter.GET("check/index", es.CheckIndex)
 		esRouter.GET("delete/index", es.DeleteIndex)
 		esRouter.GET("bulk/data", es.BulkData)
+	}
+}
+
+func TreeRouter(group *gin.RouterGroup)  {
+	treeRouter := group.Group("tree")
+	{
+		treeRouter.POST("info", binarySearchTree.BinarySearchTree)
 	}
 }
