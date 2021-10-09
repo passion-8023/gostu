@@ -7,6 +7,7 @@ import (
 	"gostu/app/controllers/database"
 	"gostu/app/controllers/es"
 	"gostu/app/controllers/gorm"
+	"gostu/app/controllers/graph"
 	"gostu/app/controllers/web"
 	"gostu/app/controllers/webcontent"
 )
@@ -19,6 +20,7 @@ func Routers(app *gin.Engine) {
 	WebRouter(group)
 	EsRouter(group)
 	TreeRouter(group)
+	GraphRouter(group)
 }
 
 func AuthRouter(group *gin.RouterGroup) {
@@ -79,5 +81,12 @@ func TreeRouter(group *gin.RouterGroup)  {
 	treeRouter := group.Group("tree")
 	{
 		treeRouter.POST("info", binarySearchTree.BinarySearchTree)
+	}
+}
+
+func GraphRouter(group *gin.RouterGroup)  {
+	graphRouter := group.Group("graph")
+	{
+		graphRouter.GET("info", graph.Graph)
 	}
 }

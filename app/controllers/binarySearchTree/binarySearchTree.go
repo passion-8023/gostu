@@ -1,6 +1,7 @@
 package binarySearchTree
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"gostu/app/services/tree"
@@ -23,17 +24,25 @@ func BinarySearchTree(ctx *gin.Context)  {
 		response.ErrorResponse(ctx, response.ValidateCheckError, rules.Translate(errs))
 		return
 	}
-	var searchTree tree.BinarySearchTree
-	newTree := tree.NewBinaryTree()
-	searchTree = newTree
-	for _, num := range treeNode.Num {
-		searchTree.Insert(num)
-	}
+	//var searchTree tree.BinarySearchTree
+	//newTree := tree.NewBinaryTree()
+
+	var newTree *tree.BinaryTree
+	//fmt.Printf("%v\n", *newTree)
+	fmt.Printf("%p\n", newTree)
+	fmt.Printf("%T\n", newTree)
+	newTree.Insert(33)
+	fmt.Println(newTree)
+
+	//searchTree = newTree
+	//for _, num := range treeNode.Num {
+	//	searchTree.Insert(num)
+	//}
 	//fmt.Println(searchTree.Show())
 	//searchTree.Delete(50)
 	//res := searchTree.Find(10)
 	//fmt.Println(searchTree.Show())
 
-	depth := searchTree.MaxDepth()
-	response.SuccessResponse(ctx, "succ",depth)
+	//depth := searchTree.MaxDepth()
+	//response.SuccessResponse(ctx, "succ",depth)
 }

@@ -19,8 +19,8 @@ func NewBinaryTree() *BinaryTree {
 }
 
 func (b *BinaryTree) Insert(num int) {
-	if b.Data == 0 {
-		b.Data = num
+	if b == nil {
+		b = &BinaryTree{Data: num}
 		return
 	}
 	tmpTree := b
