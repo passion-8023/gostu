@@ -8,6 +8,7 @@ import (
 	"gostu/app/controllers/es"
 	"gostu/app/controllers/gorm"
 	"gostu/app/controllers/graph"
+	"gostu/app/controllers/other"
 	"gostu/app/controllers/strMatch"
 	"gostu/app/controllers/web"
 	"gostu/app/controllers/webcontent"
@@ -23,6 +24,7 @@ func Routers(app *gin.Engine) {
 	TreeRouter(group)
 	GraphRouter(group)
 	StrRouter(group)
+	OtherRouter(group)
 }
 
 func AuthRouter(group *gin.RouterGroup) {
@@ -98,5 +100,12 @@ func StrRouter(group *gin.RouterGroup)  {
 	{
 		strRouter.GET("index", strMatch.BruteForce)
 		strRouter.GET("index/bm", strMatch.BoyerMoore)
+	}
+}
+
+func OtherRouter(group *gin.RouterGroup)  {
+	otherRouter := group.Group("other")
+	{
+		otherRouter.GET("queen", other.Cal8Queens)
 	}
 }
